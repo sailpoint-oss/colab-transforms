@@ -21,6 +21,9 @@
   <p align="center">
     <a href="https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70"><strong>Explore Transforms in the CoLab »</strong></a>
   </p>
+  <p align="center">
+    <a href="https://developer.sailpoint.com/discuss/t/about-the-sailpoint-developer-community-colab/11230"><strong>New to the CoLab? Click here »</strong></a>
+  </p>
 </div>
 
 <!-- CONTRIBUTING -->
