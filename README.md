@@ -1,13 +1,15 @@
 <a id="readme-top"></a>
 
 [![Discourse Topics][discourse-shield]][discourse-url]
-![Issues][issues-shield]
-![Contributor Shield][contributor-shield]
+[![Issues][issues-shield]][issues-url]
+[![Contributor Shield][contributor-shield]][contributor-url]
 
 [discourse-shield]:https://img.shields.io/discourse/topics?label=Discuss%20This%20Tool&server=https%3A%2F%2Fdeveloper.sailpoint.com%2Fdiscuss%2Fc%2Fcolab%2Fcolab-transforms%2F70
 [discourse-url]:https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70
 [issues-shield]:https://img.shields.io/github/issues/sailpoint-oss/colab-transforms?label=Issues
+[issues-url]:https://github.com/sailpoint-oss/colab-transforms/issues
 [contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/colab-transforms?label=Contributors
+[contributor-url]:https://github.com/sailpoint-oss/colab-transforms/graphs/contributors
 
 <!-- PROJECT LOGO -->
 <br />
