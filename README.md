@@ -4,8 +4,8 @@
 ![Issues][issues-shield]
 ![Contributor Shield][contributor-shield]
 
-[discourse-shield]: https://img.shields.io/discourse/topics?label=Discuss%20This%20Tool&server=https%3A%2F%2Fdeveloper.sailpoint.com%2Fdiscuss%2Fc%2Fcolab%2Fcolab-transforms%2F70
-[discourse-url]: https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70
+[discourse-shield]:https://img.shields.io/discourse/topics?label=Discuss%20This%20Tool&server=https%3A%2F%2Fdeveloper.sailpoint.com%2Fdiscuss%2Fc%2Fcolab%2Fcolab-transforms%2F70
+[discourse-url]:https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70
 [issues-shield]:https://img.shields.io/github/issues/sailpoint-oss/colab-transforms?label=Issues
 [contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/colab-transforms?label=Contributors
 
@@ -17,7 +17,7 @@
   <h3 align="center">Developer Community CoLab - Tranforms</h3>
 
   <p align="center">
-    <a href=https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70"><strong>Explore Transforms in the CoLab »</strong></a>
+    <a href="https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70"><strong>Explore Transforms in the CoLab »</strong></a>
   </p>
 </div>
 
