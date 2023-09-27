@@ -11,7 +11,7 @@
 [contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/colab-transforms?label=Contributors
 [contributor-url]:https://github.com/sailpoint-oss/colab-transforms/graphs/contributors
 
-# Developer Community CoLab - Tranforms
+# Developer Community CoLab - Transforms
 
 [Explore all Transforms in the CoLab »](https://developer.sailpoint.com/discuss/c/colab/colab-transforms/70)
 
@@ -37,11 +37,5 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
-## Discuss
-[Click Here](https://developer.sailpoint.com/discuss/new-topic?title=Your%20CoLab%20question%20title&body=Your%20CoLab%20question%20body%20here&category_id=2&tags=colab) to discuss the Colab with other users.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
