@@ -1,0 +1,14 @@
+{
+    "name": "shorten-string",
+    "type": "static",
+    "attributes": {
+        "baseAttribute": {
+            "attributes": {
+                "name": "attributeName"
+            },
+            "type": "identityAttribute"
+        },
+        "value": "#set($length = 10)#if($baseAttribute.length() > $length)$baseAttribute.substring(0,$length)#{else}$baseAttribute#end"
+    },
+    "internal": false
+}
