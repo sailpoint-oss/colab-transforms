@@ -1,0 +1,120 @@
+{
+    "attributes": {
+        "table": {
+            "USA": {
+                "attributes": {
+                    "table": {
+                        "New York": {
+                            "attributes": {
+                                "expression": "now+3h",
+                                "roundUp": false
+                            },
+                            "type": "dateMath"
+                        },
+                        "San Francisco": {
+                            "attributes": {
+                                "expression": "now",
+                                "roundUp": false
+                            },
+                            "type": "dateMath"
+                        },
+                        "default": {
+                            "attributes": {
+                                "expression": "now+3h",
+                                "roundUp": false
+                            },
+                            "type": "dateMath"
+                        }
+                    },
+                    "input": {
+                        "attributes": {
+                            "sourceName": "External Users",
+                            "attributeName": "Location"
+                        },
+                        "type": "accountAttribute"
+                    }
+                },
+                "type": "lookup"
+            },
+            "CAN": {
+                "attributes": {
+                    "expression": "now+3h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "CHN": {
+                "attributes": {
+                    "expression": "now+15h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "HKG": {
+                "attributes": {
+                    "expression": "now+15h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "CHE": {
+                "attributes": {
+                    "expression": "now+8h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "DEU": {
+                "attributes": {
+                    "expression": "now+8h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "NLD": {
+                "attributes": {
+                    "expression": "now+8h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "POL": {
+                "attributes": {
+                    "expression": "now+8h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "GBR": {
+                "attributes": {
+                    "expression": "now+7h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "IRL": {
+                "attributes": {
+                    "expression": "now+7h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            },
+            "default": {
+                "attributes": {
+                    "expression": "now+7h",
+                    "roundUp": false
+                },
+                "type": "dateMath"
+            }
+        },
+        "input": {
+            "attributes": {
+                "sourceName": "External Users",
+                "attributeName": "Country"
+            },
+            "type": "accountAttribute"
+        }
+    },
+    "type": "lookup",
+    "name": "Local Time Lookup Offset External Users"
+}
