@@ -1,0 +1,185 @@
+{
+    "name": "LastActiveDate",
+    "type": "firstValid",
+    "attributes": {
+        "values": [
+            {
+                "type": "dateFormat",
+                "attributes": {
+                    "input": {
+                        "type": "static",
+                        "attributes": {
+                            "adLastLogon": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "lastLogon",
+                                                        "sourceName": "Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "125911584000000000"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "EPOCH_TIME_WIN32",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "adLastLogonTimestamp": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "lastLogonTimestamp",
+                                                        "sourceName": "Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "125911584000000000"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "EPOCH_TIME_WIN32",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "adPwdLastSet": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "pwdLastSet",
+                                                        "sourceName": "Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "125911584000000000"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "EPOCH_TIME_WIN32",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "adWhenCreated": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "whenCreated",
+                                                        "sourceName": "Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "20000101010000.0Z"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "yyyyMMddHHmmss.S'Z'",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "azureLastInteractive": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "lastSignInDateTime",
+                                                        "sourceName": "Azure Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "2000-01-01T00:00:00Z"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "azureLastNonInteractive": {
+                                "type": "dateFormat",
+                                "attributes": {
+                                    "input": {
+                                        "type": "firstValid",
+                                        "attributes": {
+                                            "values": [
+                                                {
+                                                    "type": "accountAttribute",
+                                                    "attributes": {
+                                                        "attributeName": "lastNonInteractiveSignInDateTime",
+                                                        "sourceName": "Azure Active Directory"
+                                                    }
+                                                },
+                                                {
+                                                    "attributes": {
+                                                        "value": "2000-01-01T00:00:00Z"
+                                                    },
+                                                    "type": "static"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inputFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'",
+                                    "outputFormat": "yyMMddHH"
+                                }
+                            },
+                            "value": "#set($max=-10)#set($array = [$max.parseInt($adLastLogon),$max.parseInt($adLastLogonTimestamp),$max.parseInt($adPwdLastSet),$max.parseInt($adWhenCreated),$max.parseInt($azureLastInteractive),$max.parseInt($azureLastNonInteractive)])#foreach($val in $array)#if($val > $max)#set($max = $val)#end#end#if($max > 0)$max#end"
+                        }
+                    },
+                    "inputFormat": "yyMMddHH",
+                    "outputFormat": "ISO8601"
+                }
+            },
+            null
+        ]
+    },
+    "internal": false
+}

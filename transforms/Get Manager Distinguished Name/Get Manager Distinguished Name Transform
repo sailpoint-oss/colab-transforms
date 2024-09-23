@@ -1,0 +1,22 @@
+{
+    "name": "Get Manager Distinguished Name",
+    "type": "firstValid",
+    "attributes": {
+        "values": [
+            {
+                "attributes": {
+                    "value": "$identity.manager.attributes.distinguishedName"
+                },
+                "type": "static"
+            },
+            {
+                "attributes": {
+                    "value": ""
+                },
+                "type": "static"
+            }
+        ],
+        "ignoreErrors": "true"
+    },
+    "internal": false
+}
