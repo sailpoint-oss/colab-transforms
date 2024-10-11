@@ -1,0 +1,167 @@
+{
+    "attributes": {
+        "table": {
+            "USA": {
+                "attributes": {
+                    "table": {
+                        "Manager": {
+                            "attributes": {
+                                "accessPolicy": "US_Manager_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Employee": {
+                            "attributes": {
+                                "accessPolicy": "US_Employee_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Contractor": {
+                            "attributes": {
+                                "accessPolicy": "US_Contractor_Access"
+                            },
+                            "type": "static"
+                        },
+                        "default": {
+                            "attributes": {
+                                "accessPolicy": "US_Default_Access"
+                            },
+                            "type": "static"
+                        }
+                    },
+                    "input": {
+                        "attributes": {
+                            "sourceName": "External Users",
+                            "attributeName": "Role"
+                        },
+                        "type": "accountAttribute"
+                    }
+                },
+                "type": "lookup"
+            },
+            "CAN": {
+                "attributes": {
+                    "table": {
+                        "Manager": {
+                            "attributes": {
+                                "accessPolicy": "CAN_Manager_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Employee": {
+                            "attributes": {
+                                "accessPolicy": "CAN_Employee_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Contractor": {
+                            "attributes": {
+                                "accessPolicy": "CAN_Contractor_Access"
+                            },
+                            "type": "static"
+                        },
+                        "default": {
+                            "attributes": {
+                                "accessPolicy": "CAN_Default_Access"
+                            },
+                            "type": "static"
+                        }
+                    },
+                    "input": {
+                        "attributes": {
+                            "sourceName": "External Users",
+                            "attributeName": "Role"
+                        },
+                        "type": "accountAttribute"
+                    }
+                },
+                "type": "lookup"
+            },
+            "GBR": {
+                "attributes": {
+                    "table": {
+                        "Manager": {
+                            "attributes": {
+                                "accessPolicy": "GBR_Manager_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Employee": {
+                            "attributes": {
+                                "accessPolicy": "GBR_Employee_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Contractor": {
+                            "attributes": {
+                                "accessPolicy": "GBR_Contractor_Access"
+                            },
+                            "type": "static"
+                        },
+                        "default": {
+                            "attributes": {
+                                "accessPolicy": "GBR_Default_Access"
+                            },
+                            "type": "static"
+                        }
+                    },
+                    "input": {
+                        "attributes": {
+                            "sourceName": "External Users",
+                            "attributeName": "Role"
+                        },
+                        "type": "accountAttribute"
+                    }
+                },
+                "type": "lookup"
+            },
+            "default": {
+                "attributes": {
+                    "table": {
+                        "Manager": {
+                            "attributes": {
+                                "accessPolicy": "Global_Manager_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Employee": {
+                            "attributes": {
+                                "accessPolicy": "Global_Employee_Access"
+                            },
+                            "type": "static"
+                        },
+                        "Contractor": {
+                            "attributes": {
+                                "accessPolicy": "Global_Contractor_Access"
+                            },
+                            "type": "static"
+                        },
+                        "default": {
+                            "attributes": {
+                                "accessPolicy": "Global_Default_Access"
+                            },
+                            "type": "static"
+                        }
+                    },
+                    "input": {
+                        "attributes": {
+                            "sourceName": "External Users",
+                            "attributeName": "Role"
+                        },
+                        "type": "accountAttribute"
+                    }
+                },
+                "type": "lookup"
+            }
+        },
+        "input": {
+            "attributes": {
+                "sourceName": "External Users",
+                "attributeName": "Region"
+            },
+            "type": "accountAttribute"
+        }
+    },
+    "type": "lookup",
+    "name": "Region and Role-Based Access Policy"
+}
